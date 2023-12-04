@@ -5,6 +5,7 @@ def extract_calibration_values(line):
         if char.isdigit():
             first_digit = int(char)
             break
+        
 
     for char in reversed(line):
         if char.isdigit():
@@ -16,7 +17,7 @@ def extract_calibration_values(line):
 
 def sum_of_digits():
     total = 0
-    with open('example.txt') as f:
+    with open('c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day1/example.txt') as f:
         for line in f:
             calibration_value = extract_calibration_values(line)
             total += calibration_value

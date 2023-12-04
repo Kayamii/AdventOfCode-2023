@@ -1,6 +1,6 @@
 import regex as re
 
-file_path = "example.txt"
+file_path = "c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day1/example.txt"
 
 result = 0
 
@@ -14,7 +14,7 @@ num_map = {
     "seven": 7,
     "eight": 8,
     "nine": 9
-    
+  
 }
  
 
