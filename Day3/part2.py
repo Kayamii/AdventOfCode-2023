@@ -33,7 +33,6 @@ for i, line in enumerate(lines):
             continue
 
         num = int(num)
-
        
         check_symb(i, start-1, num) or check_symb(i, j, num)
 

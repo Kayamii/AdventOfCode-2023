@@ -29,4 +29,5 @@ for i, line in enumerate(lines):
         else:
             j += 1
 
+
 print(sum)
