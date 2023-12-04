@@ -21,5 +21,6 @@ with open(file_path, 'r') as f:
     for line in f:
         max= max_line(line)
         sum+=max
+        
     print(sum)   
            

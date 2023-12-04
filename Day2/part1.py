@@ -20,4 +20,5 @@ with open(file_path, 'r') as f:
         i+=1
         if is_valid:
             sum+=i
+            
 print(sum)            
