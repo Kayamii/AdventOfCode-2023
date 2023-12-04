@@ -1,4 +1,4 @@
-with open("c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day 3/example.txt") as f:
+with open("c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day3/example.txt") as f:
     lines = f.read().strip().split("\n")
 
 l = len(lines)

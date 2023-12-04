@@ -13,7 +13,7 @@ def validate_game(input_string, reds=12, greens=13, blues=14):
     return True
 i=0
 sum=0
-file_path = 'c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day 2/puzzle.txt'
+file_path = 'c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day2/puzzle.txt'
 with open(file_path, 'r') as f:
     for line in f:
         is_valid = validate_game(line)

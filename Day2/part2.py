@@ -15,7 +15,7 @@ def max_line(input_string):
             max_blue=number
     return max_red*max_green*max_blue                
 
-file_path = 'c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day 2/puzzle.txt'
+file_path = 'c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day2/puzzle.txt'
 sum=0
 with open(file_path, 'r') as f:
     for line in f:

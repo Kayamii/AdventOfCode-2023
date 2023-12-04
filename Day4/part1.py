@@ -1,4 +1,4 @@
-file_path = "c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day 4/example.txt"
+file_path = "c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day4/example.txt"
 num = 0
 total=0
 with open(file_path) as f:
