@@ -1,16 +1,19 @@
-with open("Day5/example.txt") as f:
-    lines = f.read().strip().split("\n")
-    part = lines[0].split(":")
-    title = part[0]
-    rest = part[1].split(' ')
-    rest.remove(rest[0])
-    print(title)
-    print(rest)
-    seeds = {}
-    for word in rest:
-        seeds[word] = seeds.get(word, 0) + 1
+seeds, *parts = open("c:/Users/mrtng/OneDrive/Bureau/AdventOfCode-2023/Day5/example.txt").read().split("\n\n")
 
-    for seed, count in seeds.items():
-        print(seed)
+seeds = list(map(int, seeds.split(":")[1].split()))
 
+for block in parts:
+    ranges = []
+    for line in block.splitlines()[1:]:
+        ranges.append(list(map(int, line.split())))
+    new = []
+    for i in seeds:
+        for dest, source, length in ranges:
+            if source <= i < source + length:
+                new.append(i - source + dest)
+                break
+        else:
+            new.append(i)
+    seeds = new
 
+print(min(seeds))
